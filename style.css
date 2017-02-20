@@ -1,0 +1,419 @@
+/****
+*****
+    Here is the CSS!
+*****
+****/
+
+/****
+*****
+    Resets and Such
+*****
+****/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+::before,::after {
+    content:'';
+}
+abbr,acronym { 
+    border:0;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+/****
+*****
+    Icon and Heading
+*****
+****/
+
+#icon{
+    width: 30px;
+    margin: 40px 0 0 90%;
+}
+
+.about-wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.name{
+    font-size: 40px;
+    color: #92f4d0;
+    font-family: 'Dosis';
+    font-weight: bold;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 20%;
+}
+
+.explain{
+    margin-top: 27px;
+    width: 90%;
+    font-size: 18px;
+    font-family: 'Lato';
+    color: #2b2b2b;
+    letter-spacing: 1px;
+}
+
+.explain2{
+    width: 90%;
+    font-size: 18px;
+    font-family: 'Lato';
+    color: #2b2b2b;
+    letter-spacing: 1px;
+}
+
+hr{
+    width: 75px;
+    height: 4px;
+    color: #2660a4;
+    /*color: #266dd3;*/
+    border: none;
+    background-color: #090C9B;
+    border-radius: 1px;
+}
+
+h2{
+    font-size: 14px;
+    font-family: 'Lato';
+    letter-spacing: 1px;
+    color: #2b2b2b;
+}
+
+a{
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.projects{
+    width: 75%;
+    margin: 27px auto;
+    margin-bottom: 50px;
+    font-size: 12px;
+    font-family: 'Lato';
+    color: #2b2b2b;
+    letter-spacing: 1px;
+}
+
+/****
+*****
+    diagonal project layout
+*****
+****/
+
+section {
+    position: relative;
+    color: #fff;
+    height: 200px;
+
+}
+section:before {
+    position: absolute;
+}
+.diag {
+    position: relative;
+}
+.diag:before {
+    position: absolute;
+}
+.diag{
+    background: #f9f9f9;
+}
+.col {
+    z-index: 1;
+}
+.project.one:before {
+    -webkit-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg)
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 110%;
+    background-image: url('TradeSchoolPattern.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.project.two:before {
+   -webkit-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg)
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 110%;
+    background-image: url('DivideandConspire.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.project.three:before {
+    -webkit-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg)
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 110%;
+    background-image: url('TDFPattern.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.splash{
+    font-size: 14px;
+    font-family: 'Lato';
+    letter-spacing: 1px;
+    color: #2b2b2b;
+    margin: 0 20% 0 12.5%;
+    display: table;
+}
+
+.splash.title{
+    font-size: 20px;
+    display: table-row;
+    vertical-align: middle;
+}
+
+
+/****
+*****
+    The man of the year
+*****
+****/
+
+.content{
+    width: 75%;
+    margin: 27px auto;
+}
+
+
+.info-head{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.container-links{
+    margin-top: 27px;
+    font-family: 'Lato';
+    font-size: 12px;
+    color: #2b2b2b;
+    width: 100%;
+    position: relative;
+}
+
+.book-icon{
+    height: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.icons{
+    width: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.profile-pic{
+    height: 200px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    line-height: 10px;
+    border: 10px solid;
+    border-color: #92f4d0; 
+}
+
+
+.left{
+    float:left;
+    margin-left: 14%;
+}
+
+.right{
+    margin-left: 65%;
+}
+
+a {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+    -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+}
+a:after {
+	content: '';
+	display: block;
+	margin: 5px auto;
+	height: 4px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+a:hover:after {
+	width: 100%;
+	background: #090C9B;
+}
+
+/****
+*****
+    Feet
+*****
+****/
+
+footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 150px 0 auto;
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+/**
+    Side Nav
+**/
+
+.nav-toggle{
+    border:none;
+    outline:none;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Dosis';
+    font-weight: bold;
+    background-color: transparent;
+    float: left;
+    width: 50px;
+    margin: 40px 0 0 5%;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.sideNav {
+    position: fixed;
+    top:-1px;
+    left: 0;
+    width: 30%;
+    height: 101%;
+    background-color: #92f4d0;
+    text-align: center;
+    overflow: auto;
+    z-index: 1;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.6s ease;
+    transition: transform 0.6s ease;
+
+}
+
+.sideNav.open {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.sideNavCont{
+    font-family: 'Lato-bold';
+    font-size: 12px;
+    line-height: 30px;
+    margin: 25% 5% 0% 5%;
+    padding: 10px;
+    color: #2b2b2b;
+}
+
+.email{
+    font-size: 16px;
+    color: #090C9B;
+}
+
+/**
+**/
+
+/****
+*****
+    Responsiveness
+*****
+****/
+
+@media screen and (max-width: 895px){
+    .right{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 814px){
+    .left{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 778px){
+    .left{
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 778px){
+    .sideNav{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 705px){
+    .left{
+        margin-left: 20%;
+        clear: both;
+    }
+    
+    .right{
+        margin-left: 13%;
+        clear: both;
+    }
+}
